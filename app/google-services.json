@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "888238506141",
+    "firebase_url": "https://intiiu-2f39e.firebaseio.com",
+    "project_id": "intiiu-2f39e",
+    "storage_bucket": "intiiu-2f39e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:888238506141:android:d0ce89a90904b5de",
+        "android_client_info": {
+          "package_name": "rokuniroku.newinti.intiiu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "888238506141-en2glmhi9rbjp10o1l9hql540tph6ntd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBom2euFtfGGRE__1CZDGr5NwbsSmtyIE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
