@@ -9,23 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginPage">
+
+        <!-- Launcher Activity -->
+        <activity
+            android:name=".Splash"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".LoginPage"/>
+        <activity android:name=".LNFItemPage" />
         <activity
-            android:name=".EventAnnPage"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".EventAnnItemPage" />
-        <activity android:name=".EventAnnRequestPage" />
-        <activity android:name=".EventAnnRequestStatusPage" />
-        <activity
-            android:name=".INTIAnnPage"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".INTIAnnItemPage" />
+            android:name=".LNFPage"
+            android:label="Lost And Found" />
 
     </application>
 
