@@ -81,7 +81,7 @@ public class LoginPage extends BaseActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
                 for(DataSnapshot snapshot: dataSnapshot.getChildren()){
-                    arrayClubValidation.add(snapshot.getKey().toString());
+                    arrayClubValidation.add(snapshot.child("email").getValue(String.class));
 
                 }
             }
