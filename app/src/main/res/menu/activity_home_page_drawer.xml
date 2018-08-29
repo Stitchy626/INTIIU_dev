@@ -26,6 +26,7 @@
             android:title="Event Announcement" />
         <item
             android:id="@+id/nav_Feedback"
+            android:icon="@drawable/ic_feedback"
             android:title="Feedback" />
 
     </group>

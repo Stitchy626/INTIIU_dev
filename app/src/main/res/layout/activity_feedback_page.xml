@@ -27,14 +27,21 @@
         android:layout_margin="10dp"
         android:layout_below="@+id/textViewFeedback"/>
 
-    <EditText
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editTextFeedback"
-        android:layout_margin="10dp"
         android:layout_below="@+id/textViewDescription"
-        android:inputType="textMultiLine"
-        android:maxLength="300"/>
+        app:counterEnabled="true"
+        app:counterMaxLength="300">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textInputEditTextFeedback"
+            android:layout_margin="10dp"
+            android:inputType="textMultiLine"
+            android:maxLength="300"/>
+    </android.support.design.widget.TextInputLayout>
 
     <Button
         android:layout_width="wrap_content"

@@ -1,6 +1,8 @@
 package rokuniroku.newinti.intiiu;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -28,7 +30,7 @@ public class FeedbackPage extends AppCompatActivity {
 
         //Layout
         Button submitBtn = (Button) findViewById(R.id.buttonSubmit);
-        final EditText editTextFeedback = (EditText) findViewById(R.id.editTextFeedback);
+        final TextInputEditText editTextFeedback = (TextInputEditText) findViewById(R.id.textInputEditTextFeedback);
 
         //Get Information of Current User
         FirebaseUser mUser = FirebaseAuth.getInstance().getCurrentUser();
@@ -43,6 +45,8 @@ public class FeedbackPage extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         Toast.makeText(FeedbackPage.this, "Thank you for your feedback", Toast.LENGTH_LONG).show();
+                        startActivity(new Intent(FeedbackPage.this, HomePage.class));
+                        finish();
                     }
                 });
             }

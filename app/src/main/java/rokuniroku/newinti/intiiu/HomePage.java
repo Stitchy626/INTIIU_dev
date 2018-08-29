@@ -268,6 +268,10 @@ public class HomePage extends AppCompatActivity
             Intent intent = new Intent(getApplicationContext(), EventAnnRequestPage.class);
             startActivity(intent);
 
+        }else if (id == R.id.nav_Feedback) {
+            Intent intent = new Intent(getApplicationContext(), FeedbackPage.class);
+            startActivity(intent);
+
         } else if (id == R.id.nav_signout) {
             SignOut();
         }
@@ -288,6 +292,7 @@ public class HomePage extends AppCompatActivity
                     public void onComplete(@NonNull Task<Void> task) {
                         startActivity(new Intent(HomePage.this, LoginPage.class));
                         Toast.makeText(HomePage.this, "Logout Successful", Toast.LENGTH_LONG).show();
+                        finish();
                     }
                 });
     }
