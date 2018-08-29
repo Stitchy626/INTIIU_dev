@@ -111,7 +111,7 @@ public class HomePage extends AppCompatActivity
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 
 
-        //Update Check
+        //Update Checking
         UpdateHelper.with(this)
                 .onUpdateCheck(this)
                 .check();
