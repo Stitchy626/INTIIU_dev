@@ -4,8 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FeebackPage">
+    tools:context=".FeebackPage"
+    android:orientation="vertical">
 
-    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewFeedback"
+        android:text="Feedback Form"
+        android:textColor="#000000"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_margin="10dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewDescription"
+        android:text="Enter your feedback:"
+        android:textColor="#000000"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/textViewFeedback"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextFeedback"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/textViewDescription"
+        android:inputType="textMultiLine"
+        android:maxLength="300"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSubmit"
+        android:text="Submit"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>
