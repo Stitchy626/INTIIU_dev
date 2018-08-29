@@ -9,7 +9,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/imgStudent"
@@ -17,6 +17,7 @@
             android:layout_height="110dp"
             android:layout_marginTop="60dp"
             android:layout_centerHorizontal="true"
+            android:background="@drawable/student"
             />
 
         <TextView
@@ -55,6 +56,7 @@
             android:layout_height="110dp"
             android:layout_marginTop="320dp"
             android:layout_centerHorizontal="true"
+            android:background="@drawable/sports"
             />
 
         <TextView

@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "888238506141-m8066bccrr96se16f7mkf3jeobvqf91k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "rokuniroku.newinti.intiiu",
+            "certificate_hash": "ec4fb9b43541f5b4b38aa40d2a7b7a25f3019988"
+          }
+        },
+        {
           "client_id": "888238506141-en2glmhi9rbjp10o1l9hql540tph6ntd.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "888238506141-915htd8mc64do45efo5ego79pt0vs1ac.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
