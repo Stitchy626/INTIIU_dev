@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
+public class PDFAdapter extends RecyclerView.Adapter<PDFAdapter.ViewHolder> {
 
     RecyclerView recyclerView;
     Context context;
@@ -26,7 +26,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         notifyDataSetChanged(); //refreshes the recycler view autotmatically
     }
 
-    public MyAdapter(RecyclerView recyclerView, Context context, ArrayList<String> items, ArrayList<String> urls) {
+    public PDFAdapter(RecyclerView recyclerView, Context context, ArrayList<String> items, ArrayList<String> urls) {
         this.recyclerView = recyclerView;
         this.context = context;
         this.items = items;

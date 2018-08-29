@@ -33,7 +33,7 @@ public class BusSchedule extends AppCompatActivity {
                 String fileName = dataSnapshot.getKey(); //  return the fileName
                 String url = dataSnapshot.getValue(String.class); // return url for fileName
 
-                ((MyAdapter) recyclerView.getAdapter()).update(fileName,url);
+                ((PDFAdapter) recyclerView.getAdapter()).update(fileName,url);
 
             }
 
@@ -59,8 +59,8 @@ public class BusSchedule extends AppCompatActivity {
         } );
 
         recyclerView.setLayoutManager( new LinearLayoutManager( BusSchedule.this ) );
-        MyAdapter myAdapter = new MyAdapter( recyclerView, BusSchedule.this,new ArrayList<String>(  ), new ArrayList<String>(  ) );
-        recyclerView.setAdapter( myAdapter );
+        PDFAdapter PDFAdapter = new PDFAdapter( recyclerView, BusSchedule.this,new ArrayList<String>(  ), new ArrayList<String>(  ) );
+        recyclerView.setAdapter(PDFAdapter);
     }
 
 }

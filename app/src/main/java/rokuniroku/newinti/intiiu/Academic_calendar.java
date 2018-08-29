@@ -32,7 +32,7 @@ public class Academic_calendar extends AppCompatActivity {
                 String fileName = dataSnapshot.getKey(); //  return the fileName
                 String url = dataSnapshot.getValue(String.class); // return url for fileName
 
-                ((MyAdapter) recyclerView.getAdapter()).update(fileName,url);
+                ((PDFAdapter) recyclerView.getAdapter()).update(fileName,url);
 
             }
 
@@ -58,8 +58,8 @@ public class Academic_calendar extends AppCompatActivity {
         } );
 
         recyclerView.setLayoutManager( new LinearLayoutManager( Academic_calendar.this ) );
-        MyAdapter myAdapter = new MyAdapter( recyclerView, Academic_calendar.this,new ArrayList<String>(  ), new ArrayList<String>(  ) );
-        recyclerView.setAdapter( myAdapter );
+        PDFAdapter PDFAdapter = new PDFAdapter( recyclerView, Academic_calendar.this,new ArrayList<String>(  ), new ArrayList<String>(  ) );
+        recyclerView.setAdapter(PDFAdapter);
 
 
 
