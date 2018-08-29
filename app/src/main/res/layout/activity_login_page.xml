@@ -11,73 +11,73 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id = "@+id/layoutStudent"
-            android:layout_marginTop="25dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textViewStudent"
-                android:text="Student"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:layout_margin="5dp"
-                android:layout_centerHorizontal="true"/>
-
-            <com.google.android.gms.common.SignInButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/buttonSignInStudent"
-                android:layout_below="@+id/textViewStudent"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"/>
-
-        </RelativeLayout>
+        <ImageView
+            android:id="@+id/imgStudent"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="5dp"
+            android:id="@+id/textViewStudent"
+            android:layout_below="@+id/imgStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student &amp; Staff login"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorBlack"
+            />
+
+        <com.shobhitpuri.custombuttons.GoogleSignInButton
+            android:id="@+id/buttonSignInStudent"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewStudent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginRight="65dp"
+            app:isDarkTheme="true"
+            android:text="Sign in with INTI email"/>
+
+        <View
             android:id="@+id/divider"
-            android:layout_margin="25dp"
-            android:layout_below="@+id/layoutStudent"/>
-
-        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id = "@+id/layoutClub"
-            android:layout_below="@id/divider"
-            android:orientation="vertical"
-            android:layout_marginTop="25dp">
+            android:layout_height="2dp"
+            android:layout_margin="25dp"
+            android:layout_centerInParent="true"
+            android:background="#FF0000FF" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textViewClub"
-                android:text="Club &amp; Society"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:layout_margin="5dp"
-                android:layout_centerHorizontal="true"/>
-
-            <com.google.android.gms.common.SignInButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/buttonSignInClub"
-                android:layout_below="@+id/textViewClub"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"/>
-
-        </RelativeLayout>
+        <ImageView
+            android:id="@+id/imgClub"
+            android:layout_width="300dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="320dp"
+            android:layout_centerHorizontal="true"
+            />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:id="@+id/divider2"
-            android:layout_margin="25dp"
-            android:layout_below="@+id/layoutClub"/>
+            android:id="@+id/textViewClub"
+            android:layout_below="@+id/imgClub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Club Login"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorBlack"
+            />
+
+        <com.shobhitpuri.custombuttons.GoogleSignInButton
+            android:id="@+id/buttonSignInClub"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewClub"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginRight="65dp"
+            app:isDarkTheme="true"
+            android:text="Sign in with Club email"/>
 
     </RelativeLayout>
 

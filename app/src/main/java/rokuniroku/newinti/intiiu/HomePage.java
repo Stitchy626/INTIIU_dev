@@ -37,7 +37,8 @@ public class HomePage extends AppCompatActivity
     private FirebaseAuth mAuth;
     private FirebaseUser mUser;
 
-    private String userValidation = "@student.newinti.edu.my";
+    private String studentValidation = "@student.newinti.edu.my",
+                    staffValidation = "@newinti.edu.my";
 
     private GoogleSignInClient mGoogleSignInClient;
 
@@ -74,7 +75,7 @@ public class HomePage extends AppCompatActivity
         email = email.substring(startZ, email.length());
 
         //START navigation bar
-        if (email.equals(userValidation)) {
+        if (email.equals(studentValidation) || email.equals(staffValidation)) {
             setContentView(R.layout.activity_home_page);
             navigationView = (NavigationView) findViewById(R.id.nav_view);
             navigationView.setNavigationItemSelectedListener(this);
@@ -223,7 +224,7 @@ public class HomePage extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.home_page, menu);
+        //getMenuInflater().inflate(R.menu.home_page, menu);
         return true;
     }
 

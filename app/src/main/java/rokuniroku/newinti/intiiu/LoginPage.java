@@ -25,6 +25,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.shobhitpuri.custombuttons.GoogleSignInButton;
 
 import java.util.ArrayList;
 
@@ -32,14 +33,14 @@ public class LoginPage extends BaseActivity {
 
     private static final String TAG = "SENPAI";
     private static final int RC_SIGN_IN = 1998;
-    private static String userValidation = "@student.newinti.edu.my",
+    private static String studentValidation = "@student.newinti.edu.my",
                             staffValidation = "@newinti.edu.my";
 
     private FirebaseAuth mAuth;
     private FirebaseDatabase dbDatabase;
     private DatabaseReference rootDatabaseRef;
 
-    private SignInButton buttonSignInStudent, buttonSignInClub;
+    private GoogleSignInButton buttonSignInStudent, buttonSignInClub;
 
     private GoogleSignInClient mGoogleSignInClient;
 
@@ -57,8 +58,8 @@ public class LoginPage extends BaseActivity {
 
         rootDatabaseRef = dbDatabase.getInstance().getReference().child("Club");
 
-        buttonSignInClub = (SignInButton) findViewById(R.id.buttonSignInClub);
-        buttonSignInStudent = (SignInButton)findViewById(R.id.buttonSignInStudent);
+        buttonSignInClub = (GoogleSignInButton) findViewById(R.id.buttonSignInClub);
+        buttonSignInStudent = (GoogleSignInButton)findViewById(R.id.buttonSignInStudent);
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
@@ -118,7 +119,7 @@ public class LoginPage extends BaseActivity {
                 firebaseAuthWithGoogle(account);
             } catch (ApiException e) {
                 // Google Sign In failed, could be sha1, or no connection
-                Toast.makeText(LoginPage.this, "Google sign in failed, Please try again later", Toast.LENGTH_LONG).show();
+                //Toast.makeText(LoginPage.this, "Google sign in failed, Please try again later", Toast.LENGTH_LONG).show();
                 Log.w(TAG, "Google sign in failed, " + e.getStatusCode());
             }
         }
@@ -159,8 +160,8 @@ public class LoginPage extends BaseActivity {
                                 }
                             }
 
-                            if (backEmail.equals(userValidation) && bIsClubClick == false || bIsClub == true && bIsClubClick == true) {
-                                startActivity(new Intent(LoginPage.this, FeedbackPage.class));
+                            if (backEmail.equals(studentValidation) && bIsClubClick == false|| backEmail.equals(staffValidation) && bIsClubClick == false || bIsClub == true && bIsClubClick == true) {
+                                startActivity(new Intent(LoginPage.this, HomePage.class));
                                 Toast.makeText(LoginPage.this, "Login Successful", Toast.LENGTH_LONG).show();
                                 Log.d(TAG, "signInWithCredential:success");
                                 finish();

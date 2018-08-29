@@ -16,6 +16,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    buildToolsVersion '27.0.3'
 }
 
 dependencies {
@@ -44,7 +45,6 @@ dependencies {
     //Image Library
     implementation 'de.hdodenhof:circleimageview:2.1.0'
     implementation 'com.squareup.picasso:picasso:2.71828'
-
-
+    implementation 'com.shobhitpuri.custombuttons:google-signin:1.0.0'
 }
 apply plugin: 'com.google.gms.google-services'
