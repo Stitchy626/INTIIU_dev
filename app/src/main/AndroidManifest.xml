@@ -27,6 +27,30 @@
             android:name=".LNFPage"
             android:label="Lost And Found" />
 
+        <activity
+            android:name=".EventAnnPage"
+            android:label="Event Announcement"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".EventAnnItemPage"/>
+
+        <activity
+            android:name=".EventAnnRequestPage"
+            android:label="Event Announcement Request"/>
+
+        <activity
+            android:name=".EventAnnRequestStatusPage"
+            android:label="Event Status"/>
+
+        <activity
+            android:name=".INTIAnnPage"
+            android:label="INTI Announcement"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".INTIAnnItemPage"/>
+
     </application>
 
 </manifest>

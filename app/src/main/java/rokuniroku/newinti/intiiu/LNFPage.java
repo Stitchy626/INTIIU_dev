@@ -1,5 +1,6 @@
 package rokuniroku.newinti.intiiu;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -29,6 +30,7 @@ public class LNFPage extends AppCompatActivity {
     private DatabaseReference mDatabase;
     private Query query;
     private ArrayList<String> arrList = new ArrayList<>();
+    private ProgressDialog pd;
     public String n;
 
     @Override
@@ -40,6 +42,10 @@ public class LNFPage extends AppCompatActivity {
         mLNFList = (RecyclerView)findViewById(R.id.myrecyclerview);
         mLNFList.setHasFixedSize(true);
         mLNFList.setLayoutManager(new LinearLayoutManager(this));
+        pd = new ProgressDialog(this);
+        pd.setIndeterminate(true);
+        pd.setMessage("Loading all category...");
+        pd.show();
         mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -47,7 +53,8 @@ public class LNFPage extends AppCompatActivity {
                 for(DataSnapshot snapshot : dataSnapshot.getChildren()){
                     arrList.add(snapshot.child("name").getValue(String.class));
                 }
-                Log.d("Test", Long.toString(arrList.size()));
+                pd.dismiss();
+                //Log.d("Test", Long.toString(arrList.size()));
             }
 
             @Override
