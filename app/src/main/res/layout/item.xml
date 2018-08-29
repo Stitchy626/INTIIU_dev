@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myCardView"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="5dp">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="261dp"
+        android:layout_height="122dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        app:cardElevation="0dp">
+
+        <TextView
+            android:id="@+id/nameOfFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="81dp"
+        android:layout_height="135dp"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+
+</android.support.v7.widget.CardView>
