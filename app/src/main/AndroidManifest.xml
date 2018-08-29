@@ -17,7 +17,6 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -43,13 +42,16 @@
             android:label="INTI Announcement"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".INTIAnnItemPage" />
-        <activity android:name=".FeedbackPage" />
-        <activity android:name=".BusSchedule" />
-        <activity android:name=".Academic_calendar" />
+        <activity android:name=".FeedbackPage"
+            android:label="Feedback"/>
+        <activity android:name=".BusSchedule"
+            android:label="Bus Schedule"/>
+        <activity android:name=".Academic_calendar"
+            android:label="Academic Calendar"/>
         <activity
             android:name=".HomePage"
             android:label="@string/title_activity_home_page"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
