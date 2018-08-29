@@ -33,6 +33,6 @@
         android:id="@+id/imageView"
         android:layout_width="81dp"
         android:layout_height="135dp"
-        app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+        app:srcCompat="@drawable/ic_pdflogo" />
 
 </android.support.v7.widget.CardView>
