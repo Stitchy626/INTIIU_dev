@@ -33,6 +33,8 @@
         android:id="@+id/imageView"
         android:layout_width="81dp"
         android:layout_height="135dp"
-        app:srcCompat="@drawable/ic_pdflogo" />
+        android:src="@drawable/pdf"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"/>
 
 </android.support.v7.widget.CardView>
