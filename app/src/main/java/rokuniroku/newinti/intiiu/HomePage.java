@@ -57,11 +57,12 @@ public class HomePage extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
         //Authentication
         mAuth = FirebaseAuth.getInstance();
         mUser = mAuth.getCurrentUser();
-
-        String email = mUser.getEmail().toString();
+        assert mUser != null;
+        String email = (String) mUser.getEmail();
         int startZ = 0;
         for (int x = 0; x < email.length(); x++) {
             if (email.charAt(x) == '@') {
