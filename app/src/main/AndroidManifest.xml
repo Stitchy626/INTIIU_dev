@@ -20,37 +20,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".LoginPage"/>
+        <activity android:name=".LoginPage" />
         <activity android:name=".LNFItemPage" />
         <activity
             android:name=".LNFPage"
             android:label="Lost And Found" />
-
         <activity
             android:name=".EventAnnPage"
             android:label="Event Announcement"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
-        <activity
-            android:name=".EventAnnItemPage"/>
-
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".EventAnnItemPage" />
         <activity
             android:name=".EventAnnRequestPage"
-            android:label="Event Announcement Request"/>
-
+            android:label="Event Announcement Request" />
         <activity
             android:name=".EventAnnRequestStatusPage"
-            android:label="Event Status"/>
-
+            android:label="Event Status" />
         <activity
             android:name=".INTIAnnPage"
             android:label="INTI Announcement"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
-        <activity
-            android:name=".INTIAnnItemPage"/>
-
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".INTIAnnItemPage" />
+        <activity android:name=".FeebackPage"></activity>
     </application>
 
 </manifest>
