@@ -201,7 +201,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="Academic Calender "
+                        android:text="Academic Calendar "
                         android:textSize="16sp"
                         android:textStyle="bold"
                         android:layout_marginTop="2dp"/>
