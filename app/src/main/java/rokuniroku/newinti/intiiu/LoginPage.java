@@ -2,7 +2,6 @@ package rokuniroku.newinti.intiiu;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -161,7 +160,7 @@ public class LoginPage extends BaseActivity {
                             }
 
                             if (backEmail.equals(userValidation) && bIsClubClick == false || bIsClub == true && bIsClubClick == true) {
-                                startActivity(new Intent(LoginPage.this, LNFPage.class));
+                                startActivity(new Intent(LoginPage.this, FeedbackPage.class));
                                 Toast.makeText(LoginPage.this, "Login Successful", Toast.LENGTH_LONG).show();
                                 Log.d(TAG, "signInWithCredential:success");
                                 finish();

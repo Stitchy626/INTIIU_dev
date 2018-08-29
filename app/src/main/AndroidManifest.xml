@@ -5,8 +5,8 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_intiicon_finale"
-        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_intiicon_finale_round"
+        android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
@@ -41,9 +41,9 @@
             android:label="INTI Announcement"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".INTIAnnItemPage" />
-        <activity android:name=".FeebackPage" />
+        <activity android:name=".FeedbackPage" />
         <activity android:name=".BusSchedule" />
-        <activity android:name=".Academic_calendar"></activity>
+        <activity android:name=".Academic_calendar"/>
     </application>
 
 </manifest>
